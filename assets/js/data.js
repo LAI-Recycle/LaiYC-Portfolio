@@ -57,6 +57,7 @@ var PORTFOLIO = {
     projects: [
         {
             n: '01',
+            img: 'assets/images/proj-01-n8n.jpg',
             title: 'n8n AI 內容自動化管線',
             desc: '利用 n8n 結合 GenAI API（wavespeed.ai / fal.ai）打造全自動化內容管線，實現從影片生成到 YouTube 上傳的端對端自動化。',
             tags: ['n8n', 'GenAI', 'API', 'YouTube'],
@@ -91,6 +92,7 @@ var PORTFOLIO = {
             desc: '針對知名 IP（火影忍者、世紀帝國 II）進行影像重製，掌握並克服運鏡控制與畫面一致性問題。',
             tags: ['GenAI', 'Prompt Eng.', 'Image AI'],
             impact: { value: '1,750+', desc: 'YouTube 觀看 · FB 1,200+ 瀏覽' },
+            img: 'assets/images/proj-05-genai-image.png',
             url: 'https://youtu.be/fpFqR8W8qFo'
         },
         {
@@ -145,6 +147,7 @@ var PORTFOLIO = {
         },
         {
             period: '2023/04 – 2023/10',
+            img: 'assets/images/exp-asus.jpg',
             company: '華碩電腦',
             companyEn: 'ASUS',
             role: '專案管理工程師',
