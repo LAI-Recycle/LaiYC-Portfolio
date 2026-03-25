@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yen-Chiang Lai — Portfolio</title>
+    <meta name="description" content="落地型專家・AI 轉型推手・技術轉譯者">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <div id="grain" aria-hidden="true"></div>
+    <div id="bg"    aria-hidden="true"></div>
+
+    <!-- ══ FIXED NAVBAR ══ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand" id="nav-brand"></a>
+            <ul class="nav-links">
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#experience">工作經歷</a></li>
+                <li><a href="#projects">專案</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#experience">工作經歷</a></li>
+                <li><a href="#projects">專案</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ══ HERO ══ -->
+        <section id="hero">
+            <div class="hero-split">
+                <div class="hero-left" id="hero-left"></div>
+                <div class="hero-right" id="hero-right"></div>
+            </div>
+            <a href="#about" class="scroll-cue" aria-label="向下滑動">
+                <span class="scroll-line"></span>
+            </a>
+        </section>
+
+        <!-- ══ 關於我 ══ -->
+        <section id="about">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">01</span>
+                    <h2 class="sec-title">關於我</h2>
+                </header>
+                <div class="about-grid">
+                    <div class="about-main" id="about-main"></div>
+                    <div class="about-side">
+                        <div class="value-list" id="about-values"></div>
+                        <div class="edu-block">
+                            <p class="edu-label">學歷</p>
+                            <div id="about-edu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ 工作經歷 ══ -->
+        <section id="experience">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">02</span>
+                    <h2 class="sec-title">工作經歷</h2>
+                </header>
+                <div class="exp-list" id="exp-list"></div>
+            </div>
+        </section>
+
+        <!-- ══ 專案 ══ -->
+        <section id="projects">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">03</span>
+                    <h2 class="sec-title">專案</h2>
+                </header>
+                <div class="proj-grid" id="proj-grid"></div>
+            </div>
+        </section>
+
+        <!-- ══ 技能 ══ -->
+        <section id="skills">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">04</span>
+                    <h2 class="sec-title">技能與認證</h2>
+                </header>
+                <div class="skills-grid">
+                    <div class="skills-col">
+                        <h3 class="sk-h" id="cert-cloud-label"></h3>
+                        <div class="cert-list" id="cert-cloud"></div>
+                        <h3 class="sk-h" id="cert-data-label" style="margin-top:1.75rem"></h3>
+                        <div class="cert-list" id="cert-data"></div>
+                    </div>
+                    <div class="skills-col">
+                        <h3 class="sk-h" id="skills-tech-label"></h3>
+                        <div class="skill-table" id="skill-table"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ 聯絡 ══ -->
+        <section id="contact">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">05</span>
+                    <h2 class="sec-title">聯絡</h2>
+                </header>
+                <div class="contact-grid" id="contact-grid"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-inner" id="footer-inner"></div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
