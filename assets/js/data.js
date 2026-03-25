@@ -65,6 +65,7 @@ var PORTFOLIO = {
         },
         {
             n: '02',
+            img: 'assets/images/proj-02-ai-tools.jpg',
             title: '企業 AI 自動化工具套件',
             desc: '以敏捷方式低成本交付 5+ 項影響力工具，包含 OCR 票據自動化、合約資料萃取、LINE 名片共享系統。',
             tags: ['OCR', 'Python', 'LINE API', 'AI'],
@@ -97,6 +98,7 @@ var PORTFOLIO = {
         },
         {
             n: '06',
+            img: 'assets/images/proj-06-vocus-blog.jpg',
             title: '方格子部落格',
             desc: '長期經營部落格，分享各種學習與心得，建立個人內容品牌。',
             tags: ['Content', 'SEO', 'B2B'],

@@ -879,7 +879,7 @@ section {
 /* Project cover image */
 .proj-cover {
     margin: -1.75rem -1.5rem 0.75rem;
-    height: 160px;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
