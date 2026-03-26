@@ -113,6 +113,65 @@
         }
     }
 
+    function renderBeliefs() {
+        var beliefsEl = document.getElementById('beliefs-list');
+        if (beliefsEl) {
+            beliefsEl.innerHTML = PORTFOLIO.beliefs.items.map(function (b) {
+                return (
+                    '<div class="belief-item">' +
+                        '<h4 class="belief-title">' + b.title + '</h4>' +
+                        '<p class="belief-desc">' + b.desc + '</p>' +
+                    '</div>'
+                );
+            }).join('');
+        }
+
+        var labelEl = document.getElementById('approach-label');
+        if (labelEl) labelEl.textContent = PORTFOLIO.approach.label;
+
+        var stepsEl = document.getElementById('approach-steps');
+        if (stepsEl) {
+            stepsEl.innerHTML = PORTFOLIO.approach.steps.map(function (s, i) {
+                return (
+                    '<li class="approach-step">' +
+                        '<span class="step-n">0' + (i + 1) + '</span>' +
+                        '<div>' +
+                            '<h4 class="step-title">' + s.title + '</h4>' +
+                            '<p class="step-desc">' + s.desc + '</p>' +
+                        '</div>' +
+                    '</li>'
+                );
+            }).join('');
+        }
+    }
+
+    function renderCommunity() {
+        var labelEl = document.getElementById('focus-label');
+        if (labelEl) labelEl.textContent = PORTFOLIO.focus.label;
+
+        var commEl = document.getElementById('community-list');
+        if (commEl) {
+            commEl.innerHTML = PORTFOLIO.community.items.map(function (c) {
+                return (
+                    '<div class="comm-item">' +
+                        '<span class="comm-yr">' + c.year + '</span>' +
+                        '<div>' +
+                            '<h4 class="comm-title">' + c.title + '</h4>' +
+                            '<p class="comm-desc">' + c.desc + '</p>' +
+                        '</div>' +
+                    '</div>'
+                );
+            }).join('');
+        }
+
+        var focusEl = document.getElementById('focus-list');
+        if (focusEl) {
+            focusEl.innerHTML = PORTFOLIO.focus.items.map(function (q) {
+                return '<li class="focus-item">' + q + '</li>';
+            }).join('');
+        }
+    }
+
     function renderProjects() {
         var el = document.getElementById('proj-grid');
         if (!el) return;
@@ -274,7 +333,9 @@
     renderNav();
     renderHero();
     renderAbout();
+    renderBeliefs();
     renderProjects();
+    renderCommunity();
     renderExperience();
     renderCerts();
     renderSkills();

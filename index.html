@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yen-Chiang Lai — Portfolio</title>
-    <meta name="description" content="落地型專家・AI 轉型推手・技術轉譯者">
+    <meta name="description" content="系統思考實踐者・AI 導入規劃者・技術轉譯者">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,9 +21,10 @@
             <a href="#hero" class="nav-brand" id="nav-brand"></a>
             <ul class="nav-links">
                 <li><a href="#about">關於我</a></li>
-                <li><a href="#experience">工作經歷</a></li>
-                <li><a href="#projects">專案</a></li>
-                <li><a href="#skills">技能</a></li>
+                <li><a href="#beliefs">觀點</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#community">社群</a></li>
+                <li><a href="#experience">經歷</a></li>
                 <li><a href="#contact">聯絡</a></li>
             </ul>
             <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
@@ -33,9 +34,10 @@
         <div class="nav-mobile" id="nav-mobile">
             <ul>
                 <li><a href="#about">關於我</a></li>
-                <li><a href="#experience">工作經歷</a></li>
-                <li><a href="#projects">專案</a></li>
-                <li><a href="#skills">技能</a></li>
+                <li><a href="#beliefs">觀點</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#community">社群</a></li>
+                <li><a href="#experience">經歷</a></li>
                 <li><a href="#contact">聯絡</a></li>
             </ul>
         </div>
@@ -47,7 +49,6 @@
         <section id="hero">
             <div class="hero-split">
                 <div class="hero-left" id="hero-left"></div>
-                <div class="hero-right" id="hero-right"></div>
             </div>
             <a href="#about" class="scroll-cue" aria-label="向下滑動">
                 <span class="scroll-line"></span>
@@ -74,14 +75,20 @@
             </div>
         </section>
 
-        <!-- ══ 工作經歷 ══ -->
-        <section id="experience">
+        <!-- ══ 核心觀點 & 我如何思考 ══ -->
+        <section id="beliefs">
             <div class="container">
                 <header class="sec-hd">
                     <span class="sec-n">02</span>
-                    <h2 class="sec-title">工作經歷</h2>
+                    <h2 class="sec-title">核心觀點</h2>
                 </header>
-                <div class="exp-list" id="exp-list"></div>
+                <div class="beliefs-grid">
+                    <div class="beliefs-list" id="beliefs-list"></div>
+                    <div class="approach-col">
+                        <h3 class="sk-h" id="approach-label"></h3>
+                        <ol class="approach-steps" id="approach-steps"></ol>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -90,9 +97,37 @@
             <div class="container">
                 <header class="sec-hd">
                     <span class="sec-n">03</span>
-                    <h2 class="sec-title">專案</h2>
+                    <h2 class="sec-title">代表作品</h2>
                 </header>
                 <div class="proj-grid" id="proj-grid"></div>
+            </div>
+        </section>
+
+        <!-- ══ 社群與領導力 ══ -->
+        <section id="community">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">04</span>
+                    <h2 class="sec-title">社群與領導力</h2>
+                </header>
+                <div class="community-grid">
+                    <div class="community-list" id="community-list"></div>
+                    <div class="focus-col">
+                        <h3 class="sk-h" id="focus-label"></h3>
+                        <ul class="focus-list" id="focus-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ 工作經歷 ══ -->
+        <section id="experience">
+            <div class="container">
+                <header class="sec-hd">
+                    <span class="sec-n">05</span>
+                    <h2 class="sec-title">工作經歷</h2>
+                </header>
+                <div class="exp-list" id="exp-list"></div>
             </div>
         </section>
 
@@ -100,7 +135,7 @@
         <section id="skills">
             <div class="container">
                 <header class="sec-hd">
-                    <span class="sec-n">04</span>
+                    <span class="sec-n">06</span>
                     <h2 class="sec-title">技能與認證</h2>
                 </header>
                 <div class="skills-grid">
@@ -122,7 +157,7 @@
         <section id="contact">
             <div class="container">
                 <header class="sec-hd">
-                    <span class="sec-n">05</span>
+                    <span class="sec-n">07</span>
                     <h2 class="sec-title">聯絡</h2>
                 </header>
                 <div class="contact-grid" id="contact-grid"></div>
