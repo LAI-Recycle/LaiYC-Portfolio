@@ -71,7 +71,11 @@
         var mainEl = document.getElementById('about-main');
         if (mainEl) {
             var bioHtml = d.bio.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+            var photo  = PORTFOLIO.hero.photo
+                ? '<img class="about-photo" src="' + PORTFOLIO.hero.photo + '" alt="' + PORTFOLIO.hero.photoAlt + '">'
+                : '';
             mainEl.innerHTML =
+                photo +
                 '<p class="pos-label">' + d.posLabel + '</p>' +
                 '<blockquote class="pull-quote">' + d.quote + '</blockquote>' +
                 bioHtml;
