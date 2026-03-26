@@ -102,11 +102,16 @@
                 var logo = e.logo
                     ? '<img class="edu-logo" src="' + e.logo + '" alt="school logo" loading="lazy">'
                     : '';
+                var thesis = e.thesis
+                    ? '<span class="edu-thesis">〈' + e.thesis + '〉' +
+                      (e.thesisNote ? '<span class="edu-thesis-note">' + e.thesisNote + '</span>' : '') +
+                      '</span>'
+                    : '';
                 return (
                     '<div class="edu-item">' +
                         logo +
                         '<span class="edu-yr">' + e.period + '</span>' +
-                        '<span class="edu-text">' + e.text + ' <strong>' + e.degree + '</strong></span>' +
+                        '<span class="edu-text">' + e.text + ' <strong>' + e.degree + '</strong>' + thesis + '</span>' +
                     '</div>'
                 );
             }).join('');
@@ -166,9 +171,12 @@
 
         var focusEl = document.getElementById('focus-list');
         if (focusEl) {
+            var dir = PORTFOLIO.focus.direction
+                ? '<li class="focus-direction">' + PORTFOLIO.focus.direction + '</li>'
+                : '';
             focusEl.innerHTML = PORTFOLIO.focus.items.map(function (q) {
                 return '<li class="focus-item">' + q + '</li>';
-            }).join('');
+            }).join('') + dir;
         }
     }
 

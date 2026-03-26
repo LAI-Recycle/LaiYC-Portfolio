@@ -657,6 +657,25 @@ section {
     color: var(--text);
 }
 
+.edu-thesis {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.edu-thesis-note {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--dim);
+    font-style: normal;
+    margin-top: 0.15rem;
+    letter-spacing: 0.02em;
+}
+
 /* ============================================================
    EXPERIENCE
    ============================================================ */
@@ -959,6 +978,18 @@ section {
     line-height: 1.8;
     padding-left: 1rem;
     border-left: 1px solid var(--line-mid);
+}
+
+.focus-direction {
+    margin-top: 1.25rem;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.845rem;
+    font-weight: 400;
+    color: var(--text);
+    background: var(--gold-dim);
+    border-left: 2px solid var(--gold);
+    line-height: 1.75;
+    list-style: none;
 }
 
 /* ============================================================
